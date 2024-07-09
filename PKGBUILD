@@ -8,9 +8,9 @@ arch=('i686' 'x86_64')
 url="https://github.com/dlbeer/quirc/"
 license=('ISC')
 depends=('libjpeg-turbo')
-makedepends=()
+makedepends=('sdl')
 checkdepends=()
-source=("https://github.com/dlbeer/quirc/archive/v${pkgver}.tar.gz")
+source=("$pkgname-$pkgver"::"https://github.com/dlbeer/quirc/archive/v${pkgver}.tar.gz")
 md5sums=('9fdda44c5b12cc721c2ca85abddf48de')
 
 build() {
